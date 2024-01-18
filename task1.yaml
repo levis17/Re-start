@@ -30,6 +30,9 @@ Resources:
         - Key: Name
           Value: Lab VPC
 
+MyS3Bucket:
+    Type: AWS::S3::Bucket
+  
   IGW:
     Type: AWS::EC2::InternetGateway
     Properties:
