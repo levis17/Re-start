@@ -30,7 +30,7 @@ Resources:
         - Key: Name
           Value: Lab VPC
 
-MyS3Bucket:
+  MyS3Bucket:
     Type: AWS::S3::Bucket
   
   IGW:
