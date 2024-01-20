@@ -118,5 +118,5 @@ VPCtoIGWConnection:
 ###########
 Outputs:
 
-  LabvPCDefaultSecurityGroup:
-    Value: !sub ${LabVPC.DefaultSecurityGroup}
+  LabVPCDefaultSecurityGroup:
+    Value: !Sub ${LabVPC.DefaultSecurityGroup}
