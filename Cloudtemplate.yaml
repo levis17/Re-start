@@ -38,21 +38,21 @@ Resources:
         - Key: Name
           Value: Lab VPC
 
-IGW:
-  Type: AWS::EC2::InternetGateway
-  Properties:
-    Tags:
-      - key: Name
-        Value: Lab IGW
+  IGW:
+    Type: AWS::EC2::InternetGateway
+    Properties:
+      Tags:
+        - key: Name
+          Value: Lab IGW
 
-VPCtoIGWConnection:
-  Type: AWS::EC2::VPCGatewayAttachment
-  DependsOn:
-    - IGW
-    - LabVPC
-  Properties:
-    InternetGatewayId: !Ref IGW
-    VpcId: !Ref LabVPC
+  VPCtoIGWConnection:
+    Type: AWS::EC2::VPCGatewayAttachment
+    DependsOn:
+      - IGW
+      - LabVPC
+    Properties:
+      InternetGatewayId: !Ref IGW
+      VpcId: !Ref LabVPC
 
 ###########
 # Private Route Table
