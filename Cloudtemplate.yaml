@@ -112,11 +112,3 @@ VPCtoIGWConnection:
     Tags:
       - кey: Name
         Value: App
-
-###########
-# Outputs
-###########
-Outputs:
-
-  LabVPCDefaultSecurityGroup:
-    Value: !Sub ${LabVPC.DefaultSecurityGroup}
