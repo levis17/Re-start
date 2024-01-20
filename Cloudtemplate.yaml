@@ -80,7 +80,7 @@ VPCtoIGWConnection:
       Availabilityzone: !Select
         - 0
         - !GetAZs
-          Ref: AWS:: Region
+          Ref: AWS::Region
       Tags:
         - Key: Name
           Value: Private Subnet
